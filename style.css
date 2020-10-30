@@ -1,0 +1,250 @@
+@font-face {
+	font-family: "Computer Modern";
+	src: url("./fonts/cmunrm.woff") format("woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Computer Modern";
+	src: url("./fonts/cmunbx.woff") format("woff");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Computer Modern It";
+	src: url("./fonts/cmunti.woff") format("woff");
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("./fonts/helveticaneue.woff") format("woff");
+	font-weight: bold;
+}
+
+html {
+	color: #666;
+	font-family: "Computer Modern", serif;
+}
+h1,h2,h3 {
+    color:inherit;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight:bold;
+    margin:0rem;
+}
+
+
+
+body{
+    margin:0em auto;
+    width:100%;
+    height:100%;
+    padding:0;
+    font-size:1.2rem;
+}
+
+#content{
+	width: 60rem;
+	margin: 0 auto;
+	padding: 0em;
+}
+#logo{
+    width: 9rem;
+    height:9rem;
+}
+#mainTitle{
+    display:inline;
+    font-size:3rem;
+    padding:0px;
+    text-shadow:3px 3px 0px #fff;
+    color:#303030;
+}
+#pagetitle{
+    display:inline;
+    font-size:6rem;
+    padding:0px;
+    margin:0px;
+
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+#myName{
+    font:bold 1.4rem "Computer Modern It", serif;
+    font-style:italic
+    display:inline;
+    font-size:3rem;
+    padding:0px;
+    text-shadow:3px 3px 0px #fff;
+    color:#303030;
+    margin:0px;
+    margin-left:3em;
+    position:relative;
+    top:-2rem;
+}
+#banner{
+    width:60rem;
+    height:9rem;
+    margin:0em 0em;
+    clear:both;
+}
+#logoBox{
+    padding:0em;
+    margin:0em;
+    float:left;
+    clear:both;
+    max-height:9rem;
+}
+#bannerMain{
+    width:48rem;
+    height:3rem;
+    padding:0rem 1rem;
+    margin:0em;
+    float:left;
+}
+nav{
+    width:60rem;
+    padding:0em;
+    clear:both;
+    min-height:3.6rem;
+    margin:0px;
+    margin-bottom:3rem;
+}
+.navbox{
+    font:bold 1.4rem "Helvetica Neue", sans-serif;
+    min-width:5rem;
+    text-align:center;
+    float:left;
+    margin:0em;
+    padding:0.8rem 1.4rem;
+    height:1.4rem;
+}
+#nav0:hover{
+    color:#666;
+    border-color:#666;
+}
+
+#nav1:hover{
+    color:#00aa00;
+}
+
+#nav2:hover{
+    color:#0000aa;
+}
+
+#nav3:hover{
+    color:#aa0000;
+}
+
+#nav4:hover{
+    color:#aa00aa;
+}
+
+#nav5:hover{
+    color:#aa5500;
+    border-color:#a55a00;
+}
+
+#nav6:hover{
+    color:#aa9900;
+}
+
+a,
+a:visited {
+	color: inherit;
+}
+
+.onethird{
+    display:block;
+    float:left;
+    width:18rem;
+    padding:1rem;
+    min-height:4rem;
+}
+.twothird{
+    display:block;
+    float:left;
+    width:38rem;
+    padding:1rem;
+    min-height:4rem;
+    margin-bottom:2rem;
+}
+.whole{
+    display:block;
+    float:left;
+    width:58rem;
+    padding:1rem;
+    min-height:4rem;
+    margin-bottom:3rem;
+}
+.wrap{
+    display:block;
+    float:left;
+    margin-bottom:4rem;
+}
+#homeWelcome{
+    font-size: 3rem;
+    text-align:left;
+}
+
+#homeIntro{
+    font-size: 1.5rem;
+    text-align:center;
+	font-family: "Computer Modern", serif;
+}
+.sectTitle{
+    font-size:3rem;
+}
+.subsect{
+    font-size:2rem;
+    font-family: "Helvetica Neue", sans-serif;
+    display:inline;
+}
+p{
+    font-size:1.2rem;
+}
+
+.sideImg{
+    padding:0px;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    border:2px solid black;
+}
+.stacked{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.emLink{
+    font-weight:bold;
+}
+.EMLink{
+    font-weight:bold;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+	border-top: 1px solid currentColor;
+	border-bottom: 1px solid currentColor;
+}
+
+th {
+	text-align: left;
+	padding: 0.25em;
+}
+
+td {
+	padding: 0.25em;
+}
+
+
+
