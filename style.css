@@ -167,10 +167,11 @@ a:visited {
 .twothird{
     display:block;
     float:left;
-    width:38rem;
+    width:39.5rem;
     padding:1rem;
     min-height:4rem;
     margin-bottom:2rem;
+    position:relative;
 }
 .whole{
     display:block;
@@ -184,6 +185,10 @@ a:visited {
     display:block;
     float:left;
     margin-bottom:4rem;
+}
+.underlined{
+    padding-bottom:0rem;
+    border-bottom:2px solid #000;   
 }
 #homeWelcome{
     font-size: 3rem;
@@ -208,10 +213,17 @@ p{
 }
 
 .sideImg{
+    max-width:18rem;
     padding:0px;
     margin-top: 2rem;
     margin-bottom:2rem;
     border:2px solid black;
+}
+.galImg{
+    padding:0px;
+    margin: 1rem;
+    border:2px solid black;
+    width:17rem;
 }
 .stacked{
     margin-top:1rem;
@@ -224,7 +236,17 @@ p{
     font-weight:bold;
     font-family: "Helvetica Neue", sans-serif;
 }
-
+.actionButton{
+    max-width:10rem;
+    background-color:#aa0000;
+    color:#fff;
+    padding:0.5rem;
+    text-align:center;
+    font-weight:bold;
+    font-family: "Helvetica Neue", sans-serif;
+    margin:0px auto;
+    text-decoration:none;
+}
 
 
 table {
