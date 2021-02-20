@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="icon" href="../favicon.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../hideboxes.js"></script>
+		<title>Jacob Neumann - Resources</title>
+
+        <style>
+            #pagetitle,.actionButton{
+                background-color:#27d8ff;
+            }
+            .sectTitle, .subsect, .emLink, .EMLink, .emLink:visited,.EMLink:visited,.cat{
+                color:#27d8ff;
+            }
+            .sideImg{
+                border-color:#27d8ff;
+            }
+            .actionButton:hover{
+                background-color:#0090b0;
+            }
+            .actionButton{
+                margin:0.5rem;
+                float:left;
+            }
+        </style>
+	</head>
+	<body>
+
+        <div id="content">
+            <!-- Top Banner -->
+            <div id="banner">
+                <div id="logoBox">
+                    <img src="logo-resources.png" id="logo">
+                </div>
+                <div id="bannerMain">
+		            <h2 id="pagetitle">
+	                    RESOURCES
+		            </h2>
+		            <h1 id="myName">
+	                    by Jacob Neumann
+		            </h1>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav>
+                <a href=".."><div class="navbox" id="nav0"> Home </div></a>
+                <a href="../about"><div class="navbox" id="nav1"> About </div></a>
+                <a href="../education"><div class="navbox" id="nav2"> Education </div></a>
+                <a href="../research"><div class="navbox" id="nav3"> Research </div></a>
+                <a href="../teaching"><div class="navbox" id="nav4"> Teaching </div></a>
+                <a href="../resources"><div class="navbox" id="nav7"> Resources </div></a>
+                <a href="../cv"><div class="navbox" id="nav5"> CV </div></a>
+                <a href="../etc"><div class="navbox" id="nav6"> Etc. </div></a>
+            </nav>
+
+            <! -- CONTENT -->
+            <div class="wrap">
+                <p> As an ongoing side-project, I sporadically create various teaching resources, mostly colorful slide decks about topics in logic, type theory, and category theory. I'm in the process of recording lectures using some of these slide decks and uploading them to my <a class="EMLink" href="https://www.youtube.com/channel/UCRfR7ivZHwXIC8kdydo5jdQ">YouTube Page</a>. My priority at the moment is creating a series of video lectures to accompany Egbert Rijke's upcoming textbook, <a href="https://github.com/EgbertRijke/HoTT-Intro">Introduction to Homotopy Type Theory</a> (referred to below as "Rijke's Introduction").</p>
+
+                <p>Everything below should be considered a work-in-progress, and updates to this page will be irregular. Except where noted, the content below is my own work and is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are highly encouraged to share, modify, and adapt the content below (subject to the terms of the license) &mdash; please contact me if you would like the source/original images for anything below.</p>
+
+                <p>Some of the pdf slide decks will be posted in both 'handout' and 'present' versions. The 'present' versions have multiple transitions per slide (so each slide appears as several pages in the pdf, with progressively more content), whereas the internal transitions are truncated in the 'handout' version.</p>
+            </div>
+            <hr>
+           
+            <div class="wrap underlined">
+                <img class="onethird sideImg" style="border-color:transparent;" src="HoTT/mltt.png">
+                <div class="twothird">
+                    <div class="cat">Intro to HoTT</div><br>
+                    <h4 class="subsect">Martin-L&ouml;f Type Theory</h4>
+                    <hr>
+                    <p>
+                        The first lecture of the Intro to HoTT video series, corresponding roughly to Chapter 1 of Rijke's Introduction. Covers the main intuitions and motivations behind homotopy type theory (including the homotopy interpretation of types and the Curry-Howard correspondence), formal languages and deduction, the judgments, structural rules, &amp; derivations of Martin-L&ouml;f Type Theory, the type of booleans, binary product types, and arrow types.
+                    </p>
+                    
+                    <a href="HoTT/mltt-present.pdf" style="text-decoration:none;"><div class="actionButton"> Slides (present)</div></a>
+                    <a href="HoTT/mltt-handout.pdf" style="text-decoration:none;"><div class="actionButton"> Slides (handout)</div></a>
+                    <a href="https://www.youtube.com/watch?v=TeY5niDR8yE" style="text-decoration:none;"><div class="actionButton"> Video 0 (20 min)</div></a>
+                </div>
+            </div>
+
+            <div class="wrap underlined">
+                <img class="onethird sideImg" style="border-color:transparent;" src="Categories/set.png">
+                <div class="twothird">
+                    <div class="cat">Categories</div><br>
+                    <h4 class="subsect">Theory of the Category of Sets</h4>
+                    <hr>
+                    <p>
+                    An introduction to the constructions possible within the category of sets (without assuming any category theory knowledge). Loosely inspired by Lawvere's <em>Elementary Theory of the Category of Sets</em> and <em>Sets for Mathematics</em>. Covers sets, functions &amp; lambda-notation, composition, universal mapping properties (of the empty set, singleton sets, injective &amp; surjective functions, binary products, exponentials, (co)equalizers, fiber products), global elements, bijections, disjoint union, recursion on the natural numbers, subset classification (characteristic functions and inclusions), Cantor's Theorem, set comprehension, equivalence relations, kernels, and images. 
+                    </p>
+                    
+                    <a href="Categories/set-present.pdf" style="text-decoration:none;"><div class="actionButton"> Slides (present)</div></a>
+                </div>
+            </div>
+	</body>
+</html>
