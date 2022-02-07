@@ -65,7 +65,9 @@
 				As G.H. Hardy aptly put it, "Beauty is the first test: there is no place in the world for ugly mathematics." Above all, I am interested to discover elegant mathematical theories, which succeed in capturing the mathematical essence of a topic (and all its complexity) in as clean and simple a formulation as possible. But I also have a great preference for theories with deep intuitive roots, theories which elucidate the structure of common experience. My work seeks to balance these goals, by seeing the mathematical structure of everyday existence and by putting in the detailed technical work to capture this mathematical structure in its essence.  
 			</p>
 			<p>
-			My work so far has focused on dynamic topological logic, a branch of modal logic which combines the logic of partial functions (which is intimately connected with topics in theoretical computer science) with topological modal logic (which relates to much research in philosophy and mathematics). Some other topics which interest me include:
+			My research while at CMU focused on dynamic topological logic, a branch of modal logic which combines the logic of partial functions (which is intimately connected with topics in theoretical computer science) with topological modal logic (which relates to much research in philosophy and mathematics) &mdash; culminating in my MS thesis (see below).
+            Since joining the FP Lab in Nottingham, I have been mainly focused on the interplay between functional programming, homotopy type theory, and (higher) category theory. I've especially been concerned with the study of (co)inductive types and the phenomenon of parametric polymorphism.
+            Some topics which interest me include:
 			<ul>
 				<li>Semantics of programming languages (both denotational and operational)</li>
 				<li>Categorical logic</li>
@@ -78,16 +80,32 @@
 				<li>The history, philosophy, and pedagogy of mathematics &amp; computer science.</li>
                 <li>Formal epistemology &amp; epistemic logic</li>
                 <li>Temporal logic &amp; the philosophy of time</li>
+                <li>Functional reactive programming</li>
 			</ul></p>
 
 
             <h3 class="sectTitle">Current/Recent Work</h3>
             <hr>
 
+                    <h4 class="subsect"> (Co)ends, (co)induction, parametricity, and representation independence </h4>
+                    <hr>
+					<p> 
+                        This research project seeks to use the mathematical tools of homotopy type theory (HoTT), and especially category-theoretic concepts imported into HoTT, to study some of the central constructs of functional programming. It encompasses several interesting facets:
+                        <ul>
+                            <li> <strong>Ends</strong>: one of the basic concepts of category theory are <em>ends</em>, which serve as a generalization of the even-more-fundamental concept of a <em>natural transformation</em>. It turns out that ends provide a robust and flexible framework for expressing some of the key features of various structures in functional programming. Ends are a well-studied notion in category theory, and can be studied even more fruitfully with the power of dependent types and identity types, the core features of HoTT.</li>
+                            <li> <strong>Inductive Types as Initial Algebras</strong>: arguably the most-important tool in a functional programmer's toolbox are <em>inductive types</em>, which are data types that allow function definition by <em>recursion</em> and mathematical reasoning by <em>structural induction</em>. The standard category-theoretic treatment of inductive types as <em>initial algebras for (polynomial) endofunctors</em> can be elegantly articulated using ends-in-HoTT, and the key principle allowing for structural induction &mdash; the <em>&eta; rule</em> &mdash; can be nicely and generally stated in this context. </li>
+                            <li> <strong>Parametricity and Strong Dinaturality</strong>: a central result in functional programming is known as <em>Reynold's Abstraction Theorem</em> or the <em>Parametricity Theorem</em>. This result governs another critical tool in functional programming &mdash; <em>parametric polymorphism</em> &mdash; and supplies so-called <em>free theorems</em> about polymorphic data. It is well-known that, for certain simple cases, the category-theoretic analogue of parametricity is <em>naturality</em>. The theory of ends-in-HoTT provides convenient notation for the defining <em>dinaturality</em> and <em>strong dinaturality</em>, generalizations of naturality. For essentially all cases of interest to functional programmers, strong dinaturality provides the correct analogue of parametricity, and supplies the correct free theorems. Understanding the exact nature of this relationship is a key focus of mine.</li>
+                            <li> <strong>Coends, coinduction, and represenation independence</strong>: a powerful aspect of category theory is its built-in duality: most category-theoretic concepts and results of note admit a "dualization" &mdash; the same idea, but reflected. Ends are no exception: we can dualize them to obtain the notion of <em>coends</em>, which can also be expressed in homotopy type theory. In the same way that ends capture the logic of inductive types, coends capture the logic of <em>coinductive types</em>. Coinductive types, and their main methods &mdash; corecursion and coinduction &mdash; also play an important role in functional programming, and an elegant mathematical description of them is well worthwhile. We can also dualize the idea of parametric polymorphism, to obtain what functional programmers call <em>existential types</em>. Existential types provide a principled way to encode data structures (like stacks, queues, dictionaries, and graphs) in functional programming. A key principle for reasoning about such structures is <em>representation independence</em>: the idea that "indistinguishable" structures are identical. Representation independence is a simple consequence of encoding existential types as coends. </li>
+                        </ul>
+                    </p>
+
+                    <hr>
+                    <br>
+                    <br>
                     <h4 class="subsect"> Relational Categories </h4>
                     <hr>
 					<p> 
-					My work on dynamic topological structures has included the study of <em>(bi)simulations</em>, which are suitable transformations between such structures. These transformations, which prove critical in proving many of my main results, also furnish a sense in which the class of dynamic topological models (or frames) constitute a <em>category</em>. My interest is in studying the properties of these categories, and generally articulating the connection between relational categories and modal logic.</p>
+					My work on dynamic topological structures has included the study of <em>(bi)simulations</em>, which are suitable transformations between such structures. These transformations, which proved critical in my master's thesis work, also furnish a sense in which the class of dynamic topological models (or frames) constitute a <em>category</em>. My interest is in studying the properties of these categories, and generally articulating the connection between relational categories and modal logic.</p>
 
                     <p> Part of this has led me to the study of <em>allegories</em>, which are a generalization of the category Rel of sets and relations. I gave a talk on allegories for <a href="https://cmu-hott.github.io/workshop2021.html">a CMU HoTT graduate student workshop</a> in February 2021. <a class="EMLink" href="allegories.pdf"> See here for my slides</a>.
                     Recently, I have been further developing the connection between allegory theory and homotopy type theory. I had the opportunity to give a talk about this research at the <a href="https://www.cmu.edu/dietrich/philosophy/hott/seminars/index.html">CMU Homotopy Type Theory Seminar</a> in September 2021, the slides for which can be found <a class="EMLink" href="CMU-seminar-Sept2021.pdf">here</a>.
