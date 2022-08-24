@@ -90,6 +90,7 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                     var titleNo = titleNoShort;
                 }
             $("#oTitle").html(prefix[titleCode] + " " + titleNoShort);
+            console.log(titleId);
             $("#oPerson").html(personTitle[titleCode] + ": " + vid[titleId].person);
             $("#oDate").html(vid[titleId].d);
             $("#oSubject").html(vid[titleId].subject);
@@ -239,7 +240,7 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                 showOverlay(currentVid);
             } 
             else {
-                currentVid = "HL1";
+                currentVid = "HL01";
              //   populateOverlay(currentVid);
             }
         });

@@ -206,6 +206,17 @@ main {
     padding:0% 10%;
 }
 
+#footlinks{
+    text-align:center;
+}
+#footlinks a{
+    text-decoration:underline;
+}
+#footlinks a:hover{
+    color:#38626f;
+}
+
+
 #HL01{
     background-image:url('thumbnails/HL01.png');
 }
