@@ -108,6 +108,9 @@ main {
 #AgdaBox, .videobox.Agda.Lect, .AL-overlay .inlink {
     background-color:#69386f;
 }
+#CollBox, .videobox.Coll, .CL-overlay .inlink{
+    background-color:#ad6a31;
+}
 .videobox.HoTT.Prob, .HP-overlay .inlink {
     background-color:#245921;
 }
@@ -131,6 +134,9 @@ main {
 }
 .AP-overlay{
     background-color: #421714;
+}
+.CL-overlay{
+    background-color: #513217;
 }
 .on {
     border-color:#bbb;
@@ -372,3 +378,20 @@ main {
     transition-delay:0.25s;
 }
 
+
+
+#CL01{
+    background-image:url('thumbnails/CL01.png');
+}
+#CL02{
+    background-image:url('thumbnails/CL02.png');
+}
+#CL03{
+    background-image:url('thumbnails/CL03.png');
+}
+#CL04{
+    background-image:url('thumbnails/CL04.png');
+}
+#CL05{
+    background-image:url('thumbnails/CL05.png');
+}

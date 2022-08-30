@@ -4,10 +4,12 @@
         prefix["AL"] = "Agda Lecture";
         prefix["HP"] = "HoTT Problem Session";
         prefix["AP"] = "Agda Problem Session";
+        prefix["CL"] = "Colloquium";
  
         var personTitle = {};
         personTitle["HL"] = "Lecturer";
         personTitle["AL"] = "Lecturer";
+        personTitle["CL"] = "Lecturer";
         personTitle["HP"] = "Led by";
         personTitle["AP"] = "Led by";       
 
@@ -35,6 +37,14 @@ vid["AL06"] = { wCode: "i-T4bLzeNwk", person: "Dan Licata", d: "03 August 2022",
 vid["AL07"] = { wCode: "x4cz1OgpU3M", person: "Anders Mörtberg", d: "08 August 2022", subject: "Cubical Agda - an introduction", PS: ["-0","-1"]};
 vid["AL08"] = { wCode: "VrqGB9PNxQc", person: "Anders Mörtberg", d: "12 August 2022", subject: "Quotients and HITs in Cubical Agda", PS: ["-0","-1"]};
 vid["AL09"] = { wCode: "8wK-ni5LTbU", person: "Anders Mörtberg", d: "17 August 2022", subject: "Homogeneous composition and cubical univalence", PS: ["-0","-1"]};
+
+vid["CL01"] = { wCode: "DEj-_k2Nx6o", person: "Jon Sterling", d: "22 August 2022", subject: "How to code your own type theory"};
+vid["CL02"] = { wCode: "_oR_UAS6lSU", person: "Pierre Cagne", d: "24 August 2022", subject: "Group theory without groups"};
+vid["CL03"] = { wCode: "XMvPcLxQ6B4", person: "Jonas Frey", d: "26 August 2022", subject: "Introduction to modalities"};
+vid["CL04"] = { wCode: "VbBDxVEu_bA", person: "Favonia", d: "29 August 2022", subject: "Cartesian cubical type theory"};
+vid["CL05"] = { wCode: "", person: "Chaitanya Leena Subramaniam", d: "31 August 2022", subject: "Semantics of HoTT"};
+
+
 vid["HP01"] = { wCode: "XVGJKjXW20U", person: "Chris Grossack", d: "05 July 2022", subject: "Dependent types and dependent functions"};
 vid["HP02"] = { wCode: "tl8f7vgQPdc", person: "Jacob Neumann", d: "09 July 2022", subject: "Inductive types"};
 vid["HP03-0"] = { wCode: "wjmB8xY7IwU", person: "Jarl G. Taxerås Flaten", d: "12 July 2022", subject: "Identity types"};
@@ -89,30 +99,39 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                 else{
                     var titleNo = titleNoShort;
                 }
-            $("#oTitle").html(prefix[titleCode] + " " + titleNoShort);
+            if (titleCode != "CL"){
+                $("#oTitle").html(prefix[titleCode] + " " + titleNoShort);
+            }
+            else{
+                $("#oTitle").html(prefix[titleCode] + ":");
+            }
             console.log(titleId);
             $("#oPerson").html(personTitle[titleCode] + ": " + vid[titleId].person);
             $("#oDate").html(vid[titleId].d);
             $("#oSubject").html(vid[titleId].subject);
 
 
-            var selector = "a"
+            var negselector = ".dummy"
             if (!isAgda){
-                selector = selector + ".HoTT"
+                negselector = negselector + ", .Agda"
             }
             if (!isHoTT){
-                selector = selector + ".Agda"
+                negselector = negselector + ", .HoTT"
             }
             if (!isLect){
-                selector = selector + ".Prob"
+                negselector = negselector + ", .Lect"
             }
             if (!isProb){
-                selector = selector + ".Lect"
+                negselector = negselector + ", .Prob"
             }
-            var Prevideo = $("#"+titleId).parent().prevAll(selector).first();
+            if (!isColl){
+                negselector = negselector + ", .Coll"
+            }
+
+            var Prevideo = $("#"+titleId).parent().prevAll("a").not(negselector).first();
             console.log(Prevideo);
             var prevideo = Prevideo.attr('id');
-            var nextvideo = $("#"+titleId).parent().nextAll(selector).first().attr('id');
+            var nextvideo = $("#"+titleId).parent().nextAll("a").not(negselector).first().attr('id');
             if ($.isEmptyObject(prevideo)) {
                 console.log("No prev");
                 $("#oPrevOuter").hide();
@@ -126,11 +145,19 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                 else{
                     var prevideoNo = prevideo.slice(2,4);
                 }
-                $("#oPrev").html(prefix[prevideoCode] + " " + prevideoNo);
-                //$("#oPrev").attr("href","#" + prevideoCode + prevideoNo);
-                $("#oPrevOuter").show();
-
+                
                 prevId=prevideoCode + prevideoNo
+                
+                if (prevideoCode != "CL"){
+                    $("#oPrev").html(prefix[prevideoCode] + " " + prevideoNo);
+                    $("#oPrevOuter").show();
+                }
+                else {
+                    $("#oPrev").html("Colloquium (" + vid[prevId].person + ")");
+                    $("#oPrevOuter").show();
+                }
+
+
             }
             if ($.isEmptyObject(nextvideo)) {
                 console.log("No next");
@@ -145,11 +172,18 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                 else{
                     var nextvideoNo = nextvideo.slice(2,4);
                 }
-                $("#oNext").html(prefix[nextvideoCode] + " " + nextvideoNo);
-                //$("#oNext").attr("href","#" + nextvideoCode + nextvideoNo);
-                $("#oNextOuter").show();
                 
                 nextId=nextvideoCode + nextvideoNo
+                
+                if (nextvideoCode != "CL"){
+                    $("#oNext").html(prefix[nextvideoCode] + " " + nextvideoNo);
+                    $("#oNextOuter").show();
+                }
+                else {
+                    $("#oNext").html("Colloquium (" + vid[nextId].person + ")");
+                    $("#oNextOuter").show();
+                }
+                
             }
 
 
@@ -212,6 +246,9 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                     $(".Agda.Prob").show();
                 }
             }
+            if (isColl){
+                $(".Coll").show();
+            }
         }
   
         //TODO function isVid (id){
@@ -235,6 +272,7 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
             isAgda = true;
             isLect = true;
             isProb = true;
+            isColl = true;
             if(window.location.hash) {
                 currentVid = window.location.hash.substring(1);
                 showOverlay(currentVid);
@@ -297,6 +335,20 @@ vid["AP09-1"] = { wCode: "TD_F9E48M1o", person: "Astra Kolomatskaia", d: "18 Aug
                 $(this).css("background","linear-gradient(45deg, #245921, #7e2c27)");
                 $(this).text("Problem Sessions");
                 isProb = true;
+                update();
+            }
+        });
+        $("#CollBox").click(function () {
+            if (isColl){
+                $(this).css("background","#333");
+                $(this).html("<del>Colloquia</del>");
+                isColl = false;
+                update();
+            }
+            else {
+                $(this).css("background","#ad6a31");
+                $(this).text("Colloquia");
+                isColl = true;
                 update();
             }
         });
