@@ -213,6 +213,11 @@ a:visited {
     font-family: "Helvetica Neue", sans-serif;
     display:inline;
 }
+.subsubsect{
+    font-size:1.4rem;
+    font-family: "Helvetica Neue", sans-serif;
+    display:inline;
+}
 p{
     font-size:1.2rem;
 }

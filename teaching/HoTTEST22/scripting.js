@@ -42,7 +42,7 @@ vid["CL01"] = { wCode: "DEj-_k2Nx6o", person: "Jon Sterling", d: "22 August 2022
 vid["CL02"] = { wCode: "_oR_UAS6lSU", person: "Pierre Cagne", d: "24 August 2022", subject: "Group theory without groups"};
 vid["CL03"] = { wCode: "XMvPcLxQ6B4", person: "Jonas Frey", d: "26 August 2022", subject: "Introduction to modalities"};
 vid["CL04"] = { wCode: "VbBDxVEu_bA", person: "Favonia", d: "29 August 2022", subject: "Cartesian cubical type theory"};
-vid["CL05"] = { wCode: "", person: "Chaitanya Leena Subramaniam", d: "31 August 2022", subject: "Semantics of HoTT"};
+vid["CL05"] = { wCode: "NpzqeZd4Yw0", person: "Chaitanya Leena Subramaniam", d: "31 August 2022", subject: "Semantics of HoTT"};
 
 
 vid["HP01"] = { wCode: "XVGJKjXW20U", person: "Chris Grossack", d: "05 July 2022", subject: "Dependent types and dependent functions"};
