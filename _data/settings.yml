@@ -2,15 +2,15 @@
 #-------------------------------
 # General Site Settings
 
-title: jacobneu.github.io
-logo:
+title: Jacob Neumann | jacobneu.github.io
+logo: "assets/images/logos/logo-home.png"
 author: Jacob Neumann
-description: this is meta description
+description: Website for Jacob Neumann
 email: jacobneu23@gmail.com
 copyright: Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
-  #  - { name: About, link: "/about" }
+  - { name: About, link: "/about" }
   #- { name: Blog, link: "/blog" }
   #- { name: Portfolio, link: "/portfolio" }
   #- { name: Contact, link: "/contact" }
@@ -37,9 +37,7 @@ hero:
   hero-title: Hi! I'm building a new site at the moment. Check back in later!
 
 social:
-  - { icon: "ti-facebook", link: "#" }
   - { icon: "ti-instagram", link: "#" }
-  - { icon: "ti-dribbble", link: "#" }
   - { icon: "ti-twitter", link: "#" }
 
 #-------------------------------
