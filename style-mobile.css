@@ -35,9 +35,7 @@ h1,h2,h3 {
 }
 
 
-html{
-    width:100%;
-}
+
 body{
     margin:0em auto;
     width:100%;
@@ -45,85 +43,8 @@ body{
     padding:0;
     font-size:1.2rem;
 }
-/* 
-#content{
-	width: 100%;
-	margin: 0;
-	padding: 0;
-} */
-#logo{
-    width: 100%;
-}
-#mainTitle{
-    display:inline;
-    font-size:3rem;
-    padding:0px;
-    text-shadow:3px 3px 0px #fff;
-    color:#303030;
-}
-#pagetitle{
-    display:inline;
-    font-size:6rem;
-    padding:0px;
-    margin:0px;
-
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255,255,255,0.1);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-#myName{
-    font:bold 1.4rem "Computer Modern It", serif;
-    font-style:italic
-    display:inline;
-    font-size:3rem;
-    padding:0px;
-    text-shadow:3px 3px 0px #fff;
-    color:#303030;
-    margin:0px;
-    margin-left:3em;
-    position:relative;
-    top:-2rem;
-}
 #banner{
-    width:100%;
-    height:13rem;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:50;
-    background-color: #00aa00;
-}
-#logoBox{
-    width:25%;
-    padding:0em;
-    margin:0em;
-    float:left;
-}
-#bannerMain{
-    width:70%;
-    padding:2rem 0% 5% 0%;
-    margin:0em;
-    float:left;
-}
-nav{
-    display:none;
-    /* width:60rem;
-    padding:0em;
-    clear:both;
-    min-height:3.6rem;
-    margin:0px;
-    margin-bottom:3rem; */
-}
-.navbox{
-    font:bold 1.4rem "Helvetica Neue", sans-serif;
-    min-width:3.4rem;
-    text-align:center;
-    float:left;
-    margin:0em;
-    padding:0.8rem 1.1rem;
-    height:1.4rem;
+    background-color: #fff;
 }
 #nav0:hover{
     color:#666;
@@ -251,10 +172,8 @@ p{
     font-family: "Helvetica Neue", sans-serif;
 }
 .actionButton{
-    max-width:10rem;
     background-color:#aa0000;
     color:#fff;
-    padding:0.5rem;
     text-align:center;
     font-weight:bold;
     font-family: "Helvetica Neue", sans-serif;
@@ -329,4 +248,178 @@ td {
     border-color: #000;
     color:#fff;
     text-shadow: 2px 2px #000;
+}
+
+@media (min-width: 921px) {
+
+    #content{
+        width: 60rem;
+        margin: 0 auto;
+        padding: 0em;
+    }
+    #logo{
+        width: 9rem;
+        height:9rem;
+    }
+    #mainTitle{
+        display:inline;
+        font-size:3rem;
+        padding:0px;
+        text-shadow:3px 3px 0px #fff;
+        color:#303030;
+    }
+    #pagetitle{
+        display:inline;
+        font-size:6rem;
+        padding:0px;
+        margin:0px;
+    
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(255,255,255,0.1);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
+    #myName{
+        font:bold 1.4rem "Computer Modern It", serif;
+        font-style:italic
+        display:inline;
+        font-size:3rem;
+        padding:0px;
+        text-shadow:3px 3px 0px #fff;
+        color:#303030;
+        margin:0px;
+        margin-left:3em;
+        position:relative;
+        top:-2rem;
+    }
+    #banner{
+        width:60rem;
+        height:9rem;
+        margin:0em 0em;
+        clear:both;
+    }
+    #logoBox{
+        padding:0em;
+        margin:0em;
+        float:left;
+        clear:both;
+        max-height:9rem;
+    }
+    #bannerMain{
+        width:48rem;
+        height:3rem;
+        padding:0rem 1rem;
+        margin:0em;
+        float:left;
+    }
+    nav{
+        width:60rem;
+        padding:0em;
+        clear:both;
+        min-height:3.6rem;
+        margin:0px;
+        margin-bottom:3rem;
+    }
+    .navbox{
+        font:bold 1.4rem "Helvetica Neue", sans-serif;
+        min-width:3.4rem;
+        text-align:center;
+        float:left;
+        margin:0em;
+        padding:0.8rem 1.1rem;
+        height:1.4rem;
+    }
+
+.actionButton{
+    max-width:10rem;
+    padding:0.5rem;
+}
+}
+@media (max-width: 920px) {
+#content{
+	width: 90%;
+	margin: 0;
+	padding: 5%;
+    padding-top:8rem;
+}
+#logo{
+    width: 100%;
+}
+#mainTitle{
+    display:inline;
+    font-size:3rem;
+    padding:0px;
+    text-shadow:3px 3px 0px #fff;
+    color:#303030;
+}
+#pagetitle{
+    display:inline;
+    font-size:2rem;
+    padding:0px;
+    margin:0px;
+
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+#myName{
+    font:bold 1.4rem "Computer Modern It", serif;
+    font-style:italic
+    display:inline;
+    padding:0px;
+    color:#303030;
+    margin:0px;
+    position:relative;
+    top:-0.65rem;
+    left:1rem;
+}
+#banner{
+    width:100%;
+    /* height:6rem; */
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:50;
+}
+#logoBox{
+    width:25%;
+    padding:0em;
+    margin:0em;
+    float:left;
+}
+#bannerMain{
+    width:70%;
+    padding:1rem 0rem;
+    margin:0em;
+    float:left;
+}
+nav{
+    display:none;
+    /* width:60rem;
+    padding:0em;
+    clear:both;
+    min-height:3.6rem;
+    margin:0px;
+    margin-bottom:3rem; */
+}
+.navbox{
+    font:bold 1.4rem "Helvetica Neue", sans-serif;
+    min-width:3.4rem;
+    text-align:center;
+    float:left;
+    margin:0em;
+    padding:0.8rem 1.1rem;
+    height:1.4rem;
+}
+.wrap{
+    width:100%;
+}
+.actionButton{
+    width:90%;
+    padding:5%;
+    margin:5px auto;
+}
 }
