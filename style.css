@@ -160,6 +160,7 @@ nav{
 a,
 a:visited {
 	color: inherit;
+    text-decoration: inherit;
 }
 
 .onethird{
@@ -257,6 +258,18 @@ p{
     margin:0px auto;
     text-decoration:none;
 }
+.inlineButton{
+    max-width:10rem;
+    background-color:#aa0000;
+    color:#fff;
+    padding:0.5rem;
+    text-align:center;
+    font-weight:bold;
+    font-family: "Helvetica Neue", sans-serif;
+    margin:0px auto;
+    text-decoration:none;
+    display:inline-block;
+}
 .cat{
     background-color:#777;
     border:2px solid black;
@@ -268,6 +281,7 @@ p{
     font-family: "Helvetica Neue", sans-serif;
     display:inline;
     margin-bottom:1rem;
+    text-decoration: none;
 }
 
 table {
@@ -290,4 +304,26 @@ td {
 }
 
 
-
+.projectTile{
+    min-height:4rem;
+    background-color:#aa0000;
+    color:#000;
+    border:2px solid #000;
+    border-radius:2rem;
+    padding:2.5rem;
+    text-align:center;
+    font-weight:bold;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size:2.5rem;
+    margin:1rem;
+    text-decoration:none;
+    float:left;
+    display:block;
+}
+.box-directedTT{
+    background-color: #fc9801;
+    background-image:url('img/bg-directedTT.png');
+    border-color: #000;
+    color:#fff;
+    text-shadow: 2px 2px #000;
+}
