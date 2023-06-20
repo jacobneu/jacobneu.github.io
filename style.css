@@ -209,6 +209,14 @@ a:visited {
 .sectTitle{
     font-size:3rem;
 }
+.itemTitle{
+    font-weight: bold;
+    font-style: italic;
+    color:#000;
+    display:inline;
+    font-size: inherit;
+    /* font-size: larger; */
+}
 .subsect{
     font-size:2rem;
     font-family: "Helvetica Neue", sans-serif;
@@ -305,16 +313,17 @@ td {
 
 
 .projectTile{
-    min-height:4rem;
+    width:12.5rem;
+    height:5rem;
     background-color:#aa0000;
     color:#000;
-    border:2px solid #000;
+    border:.25rem solid #000;
     border-radius:2rem;
     padding:2.5rem;
     text-align:center;
     font-weight:bold;
     font-family: "Helvetica Neue", sans-serif;
-    font-size:2.5rem;
+    font-size:1.75rem;
     margin:1rem;
     text-decoration:none;
     float:left;
@@ -326,4 +335,34 @@ td {
     border-color: #000;
     color:#fff;
     text-shadow: 2px 2px #000;
+}
+.box-leanCatlogic{
+    background-color: #590082;
+    background-image:url('img/bg-leanCatlogic.png');
+    border-color: #000;
+    color:#fff;
+    text-shadow: 2px 2px #000;
+}
+.box-strongDinat{
+    background-color: #07103a;
+    background-image:url('img/bg-strongDinat.png');
+    border-color: #000;
+    color:#fff;
+    text-shadow: 2px 2px #000;
+}
+/* .projectTile.box-leanCatlogic{
+    font-size:2rem;
+} */
+.projectTile.singleLine{
+    font-size:3rem;
+}
+.projectTile.doubleLine{
+    font-size:1.9rem;
+}
+.projectTile.tripleLine{
+    font-size:1.5rem;
+}
+
+.denseList li {
+    margin-bottom:1rem;
 }
