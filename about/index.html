@@ -6,6 +6,17 @@
 		<link rel="stylesheet" href="../style.css" />
 		<link rel="icon" href="../favicon.png" />
 		<title>Jacob Neumann - About</title>
+        <style>
+            #pagetitle,.actionButton{
+                background-color:#00aa00;
+            }
+            .sectTitle, .subsect, .emLink, .EMLink, .emLink:visited,.EMLink:visited{
+                color:#00aa00;
+            }
+            .social-link:hover{
+                border-color:#00aa00;
+            }
+        </style>
 	</head>
 	<body>
 
@@ -25,7 +36,16 @@
                 </div>
             </div>
             <!-- Navbar -->
-            <nav>
+            <nav id="social-links">
+                <a href="mailto:jacob.neumann@nottingham.ac.uk" title="University email"><img class="social-link" src="../img/email.png"></a>
+                <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/people/jacob.neumann" title="University of Nottingham page"><img class="social-link" src="../img/nottingham.png"></a>
+                <a href="https://scholar.google.com/citations?user=C_ouAsgAAAAJ" title="Google Scholar"><img class="social-link" src="../img/googlescholar.png"></a>
+                <a href="https://github.com/jacobneu" title="Github"><img class="social-link" src="../img/github.png"></a>
+                <a href="https://www.youtube.com/@jacobneu-videos" title="YouTube"><img class="social-link" src="../img/youtube.png"></a>
+                <a href="https://www.instagram.com/bocaj_altermann/" title="Instagram"><img class="social-link" src="../img/instagram.png"></a>
+                <a href="https://discord.com/users/831693873267867698" title="Discord"><img class="social-link" src="../img/discord.png"></a>
+            </nav>
+            <nav id="main-nav">
                 <a href=".."><div class="navbox" id="nav0"> Home </div></a>
                 <a href="../about"><div class="navbox" id="nav1"> About </div></a>
                 <a href="../education"><div class="navbox" id="nav2"> Education </div></a>
@@ -39,7 +59,7 @@
             <! -- CONTENT -->
             <img src="../img/jacobNeumann.jpg" class="onethird">
             <div class="twothird">
-                <h3 class="sectTitle" style="color:#00aa00"> About Me </h3>
+                <h3 class="sectTitle"> About Me </h3>
                 <hr>
                 <p>
                 Hi! My name's Jacob. I'm currently a PhD student in the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/index.aspx">Functional Programming Laboratory</a>, part of the School of Computer Science at the University of Nottingham. Before moving to Nottingham, I lived in Pittsburgh, Pennsylvania while completing my <a href="../education">undergraduate (in mathematics) and master's degree (in logic) at Carnegie Mellon University</a>. I was born and raised in Denver, Colorado (and make it back there as often as I can!).

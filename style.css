@@ -114,7 +114,6 @@ nav{
     clear:both;
     min-height:3.6rem;
     margin:0px;
-    margin-bottom:3rem;
 }
 .navbox{
     font:bold 1.4rem "Helvetica Neue", sans-serif;
@@ -157,6 +156,26 @@ nav{
 
 #nav7:hover{
     color:#27d8ff;
+}
+#main-nav{
+    margin-bottom:3rem;
+    margin-top:-0.5rem;
+}
+#social-links{
+    margin-top:1rem;
+    text-align:center;
+}
+.social-link{
+    height: 3rem;
+    width: 3rem;
+    margin: 0rem 0.5rem;
+    border-radius:0.75rem;
+    padding:0.25rem;
+    border:3px solid white;
+}
+.social-link:hover{
+    border-color:#666;
+    background-color:#d0d0d0;
 }
 
 
