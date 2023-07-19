@@ -366,9 +366,9 @@ td {
     color:#fff;
     text-shadow: 2px 2px #000;
 }
-.box-strongDinat{
+.box-paranat{
     background-color: #07103a;
-    background-image:url('img/bg-strongDinat.png');
+    background-image:url('img/bg-paranat.png');
     border-color: #000;
     color:#fff;
     text-shadow: 2px 2px #000;
@@ -383,7 +383,9 @@ td {
     font-size:1.9rem;
 }
 .projectTile.tripleLine{
-    font-size:1.5rem;
+    font-size:1.9rem;
+    padding:1.5rem 2.5rem;
+    height:7rem;
 }
 
 .denseList li {
