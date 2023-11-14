@@ -11,6 +11,12 @@
                 background-color:#909090;
                 border-color:#303030;
             }
+            #newsList{
+                list-style-image: url('img/diamond-bullet.png');
+            }
+            #newsList li{
+                font-size:20px;
+            }
         </style>
 	</head>
 	<body>
@@ -52,12 +58,19 @@
                 <a href="etc"><div class="navbox" id="nav6"> Etc. </div></a>
             </nav>
 
-            <! -- CONTENT -->
+            <!-- CONTENT -->
             <div class="whole">
                 <h2 id="homeWelcome"> Welcome! </hr>
                 <h3 id="homeIntro"> Thanks for visiting my personal webpage!
                     My name is Jacob Neumann, I'm a graduate student studying (and teaching) logic, philosophy, type theory, and category theory.
                     Use the links above to learn more about my work! </h3>
+                <br>
+                <h4 class="subsect">Recent News</h4>
+                <ul id="newsList">
+                    <li><strong>Nov. 13:</strong> I released my most recent 'Intro to HoTT' video on YouTube, <a class="EMLink" href="https://www.youtube.com/watch?v=5pfvsxWVs34&ab_channel=JacobNeumann">Noughts &amp; Crosses, Part 2: Understanding Beta &amp; Eta</a></li>
+                    <li><strong>Oct. 28:</strong> I delivered a talk, <a class="EMLink" href="research/paranat#Octoberfest-2023">Paranatural Category Theory</a>, for the 2023 Category Theory Octoberfest. My slides are available <a class="EMLink" href="research/slides/Octoberfest-2023.pdf">here</a>, and a recording of the talk is available <a href="https://richardblute.files.wordpress.com/2023/10/newmann-oct23.mp4" class="EMLink">here</a>.</li>
+                    <li><strong>Sep. 24:</strong> I delivered a talk, <a class="EMLink" href="research/paranat#CMU-2023">Paranatural Category Theory</a> at the CMU HoTT Seminar. My slides are available <a class="EMLink" href="research/slides/CMU-2023.pdf">here</a>.</li>
+                </ul>
             </div>
         </div>
 
