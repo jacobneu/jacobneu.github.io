@@ -1,10 +1,10 @@
 @font-face {
   font-family: lato;
-  src: url(src/Lato-Regular.ttf);
+  src: url(Lato-Regular.ttf);
 }
 @font-face {
   font-family: lato;
-  src: url(src/Lato-Black.ttf);
+  src: url(Lato-Black.ttf);
   font-weight:bold;
 }
 body{
@@ -13,7 +13,7 @@ body{
 	margin:0px;
 	text-align:center;
 	padding:0px;
-    font-family:lato;
+    font-family:lato,sans-serif;
 }
 a{
 	text-decoration:none;
@@ -26,7 +26,7 @@ a{
     background-color:#dcdef7;
 }
 #header{
-	font-family:lato;
+	font-family:lato,sans-serif;
 	font-size:18px;
 	font-weight:bold;
 	text-align:right;
