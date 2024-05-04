@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <title>Daily Spelling Quiz</title> 
+          <link rel="stylesheet" href="src/style.css">
+          <script>
+            function update_links()
+            {
+                start = new Date(2024,4,2);
+                today = new Date();
+                num=Math.trunc((today - start) / (1000 * 60 * 60 * 24));
+                console.log(num);
+                num = num % 500;
+                if (num == 0){
+                    num=500;
+                }
+                console.log(num);
+
+                prev=(num + 499)%500;
+                next=(num + 1)%500;
+                if (prev == 0){
+                    prev=500;
+                }
+                if (next == 0){
+                    next=500;
+                }
+                console.log("prev",prev);
+                console.log("next",next);
+
+                document.getElementById("todayLink").innerHTML = "#" + num;
+                document.getElementById("yesterdayLink").innerHTML = "#" + prev;
+                document.getElementById("tomorrowLink").innerHTML = "#" + next;
+
+                document.getElementById("todayLink").href = num;
+                document.getElementById("yesterdayLink").href = prev;
+                document.getElementById("tomorrowLink").href =  next;
+            }
+          </script>
+     </head>
+     <body onload="update_links()">
+<!--Standard page settings-->
+		<div id="header">
+        <div class="left" id="menu-left"><img src="src/logo.png"></div>
+        <div id="menu">
+            <a class="toplink" href="https://www.theschaeferprogram.com/">Main site</a>
+            <a class="toplink" href="https://jacobneu.github.io/spelling">Daily Spelling Quiz</a>
+        </div>
+		</div>
+<!--CONTENT-->
+        <div id="banner">
+            <h4>Welcome to the Daily Spelling Quiz site for The Schaefer Program. Click the links below to access the spelling quizzes.</h4>
+            <h2 id="title">Today's Quiz: <a class="frontLink" id="todayLink" href="2">#2</a></h2>
+            <h4>Yesterday: <a class="frontLink" id="yesterdayLink" href="1">#1</a></h4>
+            <h4>Tomorrow: <a class="frontLink" id="tomorrowLink" href="3">#3</a></h4>
+        </div>
+
+        <div id="footer">
+            <p>Daily Spelling Quiz for the Schaefer Program</p>
+            <p>Word lists by Bill Schaefer. Site designed in Bill's honor by <a href="https://jacobneu.github.io" style="text-decoration:underline">Jacob Neumann</a>.</p>
+            <p>Problems with the site? Contact <a href="mailto:jacobneu23@gmail.com" style="text-decoration:underline;color:#000;">Jacob</a>.</p>
+        </div>
+</body>
+	<!--0423 ITGOGTFTSATHS-->
+</html>
