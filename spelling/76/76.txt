@@ -1,0 +1,60 @@
+0_0_language
+1_0_alas
+2_0_rapper
+3_0_aforesaid
+4_0_mesmerize
+5_0_pedicure
+6_0_tactically
+7_0_epinician
+8_0_dithyramb
+9_0_Ailurus
+0_1_LANG-gwij
+1_1_uh-LAS
+2_1_RAP-uhr
+3_1_uh-FOHR-sed
+4_1_MEZ-muhr-yz
+5_1_PED-uh-kyoor
+6_1_TAK-tuh-kuh-lee; TAK-tik-lee
+7_1_ep-uh-NISH-uhn
+8_1_DITH-uh-ram; DITH-ee-ram
+9_1_y-LUHR-uhs
+0_2_noun
+1_2_interjection
+2_2_noun
+3_2_adjective
+4_2_verb
+5_2_noun
+6_2_adverb
+7_2_adjective
+8_2_noun
+9_2_noun
+0_3_&lt;English&lt;French&lt;Latin
+1_3_&lt;English&lt;French
+2_3_&lt;English&lt;French
+3_3_&lt;English
+4_3_&lt;Austrian name + Ecf
+5_3_&lt;Latin + &lt;French&lt;Latin
+6_3_&lt;Latin&lt;Greek + Ecf
+7_3_&lt;Greek
+8_3_&lt;Greek
+9_3_&lt;Greek
+0_4_any means of communicating; human speech
+1_4_used to express unhappiness, sorrow, pity or concern
+2_4_a short, flat flexible steel sword made with a handle at each end and used in English folk dancing
+3_4_mentioned previously
+4_4_to hypnotize; to spellbind or fascinate
+5_4_a treatment of the feet, toes, and toenails
+6_4_in a skillful manner to gain an end, especially militarily
+7_4_celebrating victory
+8_4_a poem or statement in an inspired wild irregular strain usually in praise of something
+9_4_a genus of mammals comprising the panda
+0_5_
+1_5_
+2_5_
+3_5_
+4_5_
+5_5_
+6_5_
+7_5_
+8_5_
+9_5_
