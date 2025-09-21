@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<link rel="stylesheet" href="../style.css" />
 		<link rel="icon" href="../favicon.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../hideboxes.js"></script>
 		<title>Jacob Neumann - Research</title>
         <style>
             #pagetitle,.actionButton{
@@ -68,6 +70,36 @@
    
             <! -- CONTENT -->
             <div class="wrap">
+
+            <h3 class="sectTitle"> PhD Thesis </h3><hr>
+
+            
+
+            <div class="wrap underlined">
+                <div class="twothird">
+                    <h4 class="subsect"> A Generalized Algebraic Theory of Directed Equality</h4><br>
+                    <strong>University of Nottingham, School of Computer Science</strong><br>
+                    &mdash; Submitted: 05 June 2025<br>
+                    &mdash; Defended: 16 September 2025 [<a class="EMLink" href="slides/thesisDefense.pdf">slides</a>]
+                    <hr>
+
+                         <a href="https://jacobneu.phd" style="text-decoration:none;"><div class="actionButton" style="max-width:15rem; margin:10px;"> Visit the website: jacobneu.phd </div></a>
+
+                    <p><strong>Abstract.</strong> We develop a directed type theory capable of synthetic reasoning about 1-categories, with straightforward semantics in the category of categories. All our semantic notions are defined as generalized algebraic theories, permitting modular reasoning about different type theories and ensuring the existence of initial syntax models.</p>
+
+                    <p>We define the category model of type theory—the directed analogue of Hofmann and Steicher's groupoid model—where contexts are interpreted as categories and types as (split opfibrant) displayed categories. <span class="initHide">Adapting the groupoid model semantics of key type formers, (dependent) functions and identity types in particular, requires us to adopt a modal typing discipline to track the variances of terms. We define a succession of model notions—polarized categories with families, neutral-polarized categories with families, and directed categories with families—to abstractly capture more and more of the type theory of the category model; this includes an axiomatization of how the groupoid model's undirected type theory is situated inside the category model's directed type theory.</span></p>
+
+                <span class="initHide">
+                    <p>The symmetric (i.e. invertible) identity types of the groupoid model become directed hom-types of the category model; we can show by metatheoretic argument that our polarized typing discipline prevents invertibility of hom-types from being provable in our directed type theory. Each type therefore has the structure of a synthetic category and each function a synthetic functor; this is all proved within the theory using the eliminator for hom-types, directed path induction. We expound a new style of categorytheoretic reasoning appropriate to this setting, where the universal mapping properties of standard category theory are all phrased as principles of induction.</p>
+
+                    <p>To support these developments, we outline generalized algebra, the mathematical discipline concerned with generalized algebraic theories. In particular, we highlight the construction of an initial algebra for every GAT (which is what guarantees a syntax model for the notions of model we use) and the fact that every GAT gives rise to a "concrete category with families", a model of type theory whose contexts are algebras and types are displayed algebras. The groupoid and category models can be viewed as a modification of the concrete CwFs of groupoids and categories, respectively, which ensures the fibrancy of their types.</p>
+                </span>
+                <img src="../img/hidebox.png" class="target" style="width:100%; position:absolute;bottom:2rem;right:0px;">
+                </div>
+                <a href="https://jacobneu.phd"><img class="onethird sideImg stacked" src="../img/thesisCover.png"></a>
+                <a href="https://jacobneu.phd"><img class="onethird sideImg stacked" src="../img/thesisDefense.png"></a>
+            </div>
+
            
             <h3 class="sectTitle"> Current Work </h3><hr>
                 <!--h3 class="subsect">Projects</h3><hr>
@@ -76,15 +108,21 @@
                     <a href="paranat/"><div class="projectTile tripleLine box-paranat">Paranatural Category Theory</div></a>
                     <a href="lean-catLogic/"><div class="projectTile doubleLine box-leanCatlogic">Categorical Logic in Lean</div></a>
                     </div-->
-                <h3 class="subsect">Preprints</h3><hr>
+                <h3 class="subsect">Publications</h3><hr>
                 <ul class="denseList">
                     <li> 
-                        <a href="directedTT/"><div class="cat box-directedTT">directedTT</div></a> 
-                        &nbsp;<a href="paranat#paranaturalCT"><h5 class="itemTitle">Synthetic 1-Categories in Directed Type Theory</h5></a>
-                        <br>&mdash; arXiv preprint arXiv:2410.19520<br>
+                        <div class="cat box-directedTT">directedTT</div>
+                        &nbsp;<h5 class="itemTitle">Synthetic 1-Categories in Directed Type Theory</h5>
+                        <br>&mdash; In 30th International Conference on Types for Proofs and Programs (TYPES 2024). Leibniz International Proceedings in Informatics (LIPIcs), Volume 336, pp. 7:1-7:23, Schloss Dagstuhl &mdash; Leibniz-Zentrum für Informatik (2025). <a class="EMLink" href="https://doi.org/10.4230/LIPIcs.TYPES.2024.7">doi.org/10.4230/LIPIcs.TYPES.2024.7</a><br>
+                        [<a class="EMLink" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TYPES.2024.7">official page</a>]
+                        [<a class="EMLink" href="https://drops.dagstuhl.de/entities/volume/LIPIcs-volume-336">volume</a>]
                         [<a class="EMLink" href="https://arxiv.org/abs/2410.19520">arXiv page</a>]
-                        [<a class="EMLink" href="https://arxiv.org/pdf/2410.19520.pdf">pdf</a>]
+                        [<a class="EMLink" href="https://arxiv.org/pdf/2410.19520.pdf">arXiv pdf</a>]
                     </li>
+                </ul>
+
+                <h3 class="subsect">Preprints</h3><hr>
+                <ul class="denseList">
                     <li> 
                         <a href="paranat/"><div class="cat box-paranat">paranat</div></a> 
                         &nbsp;<a href="paranat#paranaturalCT"><h5 class="itemTitle">Paranatural Category Theory</h5></a>

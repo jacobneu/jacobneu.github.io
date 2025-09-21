@@ -77,7 +77,7 @@ body{
 }
 #myName{
     font:bold 1.4rem "Computer Modern It", serif;
-    font-style:italic
+    font-style:italic;
     display:inline;
     font-size:3rem;
     padding:0px;
