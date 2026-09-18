@@ -201,6 +201,15 @@ a:visited {
     margin-bottom:2rem;
     position:relative;
 }
+.half{
+    display:block;
+    float:left;
+    width:28rem;
+    padding:1rem;
+    min-height:4rem;
+    margin-bottom:2rem;
+    position:relative;
+}
 .whole{
     display:block;
     float:left;
@@ -256,6 +265,13 @@ p{
 
 .sideImg{
     max-width:18rem;
+    padding:0px;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    border:2px solid black;
+}
+.sideImgBig{
+    max-width:28rem;
     padding:0px;
     margin-top: 2rem;
     margin-bottom:2rem;
